@@ -88,11 +88,11 @@ text-align: center;
   border-top: solid;
   border-color: #e8eae6;
   display: flex;
-justify-content: space-around;
-text-align: center;
-align-items: center;
-border-bottom-left-radius: 8px;
-border-bottom-right-radius: 8px;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 
 }
 .stats {
