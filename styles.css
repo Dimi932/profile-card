@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*, input {
+  font-family:'Kumbh Sans', sans-serif;
+}
+body {
+background-color: hsl(185, 75%, 39%);
+height: 100vh;
+width: 100%;
+background-image: url(images/bg-pattern-top.svg),
+  url(images/bg-pattern-bottom.svg);
+background-repeat: no-repeat, no-repeat;
+background-position: right 52vw bottom 38vh, left 49vw top 51vh;
+color: hsl(227, 10%, 46%);
+}
+
+h1 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 80px;
+  color: hsl(229, 23%, 23%);
+}
+
+h2 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 16px;
+  margin-bottom: 25px;
+  opacity: 0.5;
+  font-weight: normal;
+}
+
+
+p {
+  text-align: center;
+  opacity: 0.5;
+  margin-top: 10px;
+}
+
+span {
+  margin-left: 16px;
+  opacity: 0.5;
+  font-weight: lighter;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 95vh 5vh;
+  width: 100%;
+}
+.box {
+  width: 40%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 0.5fr;
+  align-self: center;
+  justify-self: center;
+  border-radius: 8px;
+  background-color: white;
+}
+.top-box {
+
+  background-image: url(images/bg-pattern-card.svg);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: grid;
+}
+img {
+  border-radius: 50%;
+  margin-bottom: -160px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  justify-self: center;
+  align-self: center;
+}
+
+.middle-box {
+text-align: center;
+}
+
+.bottom-box {
+  border-top: solid;
+  border-color: #e8eae6;
+  display: flex;
+justify-content: space-around;
+text-align: center;
+align-items: center;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+
+}
+.stats {
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+  font-weight: bolder;
+}
+li {
+  list-style: none;
+  line-height: 1.5;
+  font-size: 11px;
+  color: hsl(0, 0%, 59%);
+}
+.attribution {
+  font-size: 11px; text-align: center;
+  align-self: center;
+  justify-self: center;
+
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 1000px) {
+.wrapper {
+  padding: 30px;
+
+}
+  .box {
+    width: 100%;
+  }
+  .bottom-box {
+display: grid;
+grid-gap: 12px;
+  }
+
+}
